@@ -5,10 +5,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/api")
 public class Home {
 
-    @GetMapping("/hello")
+    @GetMapping("/")
     public String sayHello() {
         return "WELCOME TO APP";
     }
